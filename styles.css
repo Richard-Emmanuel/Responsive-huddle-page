@@ -280,6 +280,7 @@ nav {
   .footer-links {
     flex-direction: column;
     margin-bottom: .8rem;
+    overflow:hidden;
   }
 
   .social-icons {
