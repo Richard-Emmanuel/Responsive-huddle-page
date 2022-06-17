@@ -1,0 +1,295 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --Pink: hsl(322, 100%, 66%);
+  --Very-Pale-Cyan: hsl(193, 100%, 96%);
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Grayish-Blue: hsl(208, 11%, 55%);
+  --footer-text: hsl(208, 15%, 75%);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  Font-size: 18px;
+  color: var(--Grayish-Blue);
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--Very-Dark-Cyan);
+}
+
+header,
+.first-section {
+  background: url(images/bg-hero-desktop.svg) no-repeat;
+  background-size: cover;
+  background-color: var(--Very-Pale-Cyan);
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar img {
+  margin: 2rem 2rem;
+  height: 1rem;
+}
+
+.trial-btn {
+  background-color: #fff;
+  border-radius: 2rem;
+  color: var(--Very-Dark-Cyan);
+  border: none;
+  margin: 1rem 3rem;
+  font-weight: 700;
+  padding: 0 4rem;
+}
+
+.trial-btn:hover {
+  cursor: pointer;
+}
+
+.first-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 4rem;
+  margin-bottom: 7rem;
+}
+
+.sec-left {
+  padding: 0 .6rem;
+}
+
+.sec-left h1 {
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.sec-image img {
+  height: 30rem;
+}
+
+.box {
+  display: flex;
+  width: 80%;
+  margin: 2rem auto;
+  align-items: center;
+  padding: 0 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgb(183, 183, 183);
+}
+
+.mockup-img {
+  height: 20rem;
+}
+
+.box-text {
+  padding: 3.5rem;
+}
+
+.box-text h2 {
+  margin-bottom: .7rem;
+
+}
+
+.cta {
+  font-family: 'Poppins', sans-serif;
+}
+
+.cta-div {
+  width: 35%;
+  margin: 7rem auto -4rem;
+  text-align: center;
+  box-shadow: 0 0 5px rgb(183, 183, 183);
+  border-radius: 0.5rem;
+  padding-bottom: 2rem;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-div h1 {
+  padding: 2rem 0 .5rem;
+  font-size: 25px;
+}
+
+.cta-btn {
+  color: #fff;
+  font-weight: 700;
+  background-color: var(--Pink);
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.9rem 2.5rem;
+  margin-top: 1.3rem;
+}
+
+.cta-btn:hover {
+  cursor: pointer;
+  background-color: rgb(254, 177, 190);
+}
+
+.footer-container {
+  background-color: var(--Very-Dark-Cyan);
+  color: var(--footer-text);
+  bottom: 0;
+  width: 100%;
+  position: relative;
+  padding-bottom: .5rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem auto 0;
+  padding: 7rem 0 0;
+}
+
+.footer-left {
+  width: 33%;
+  margin-right: 4rem;
+}
+
+.footer-left div {
+  padding-bottom: 1.5rem;
+}
+
+.contact-icon {
+  display: flex;
+}
+
+.contact-icon img {
+  margin-right: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  margin: 4rem 0;
+}
+
+.footer-links a {
+  display: flex;
+  margin: 1rem 2rem 0 0;
+  color: var(--Grayish-Blue);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  transition: 0.3s ease-in-out;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 5rem;
+  justify-content: center;
+}
+
+.icons {
+  height: 2.5rem;
+  display: inline-block;
+  border-radius: 50%;
+  padding: .3rem .5rem 1rem;
+  border: 1px solid #fff;
+  margin-right: 10px;
+  color: #fff;
+  margin-bottom: 10rem;
+}
+
+.icons:hover {
+  border: 1px solid rgb(162, 43, 62);
+  cursor: pointer;
+}
+
+.icons i:hover {
+  color: var(--Pink);
+}
+
+@media (max-width:955px) {
+  body {
+    background: url(images/bg-hero-mobile.svg);
+    justify-content: center;
+    align-items: center;
+  }
+  .trial-btn {
+    padding: 0 3rem;
+  }
+  .first-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sec-image img {
+    height: 17rem;
+  }
+
+  .sec-left {
+    margin-bottom: 4rem;
+  }
+
+  .box {
+    flex-direction: column-reverse;
+  }
+
+  .box-2 {
+    flex-direction: column;
+  }
+
+  .box-text {
+    padding: 0.9rem;
+    text-align: center;
+  }
+
+  .mockup-img {
+    height: 15rem;
+  }
+
+  .cta-div {
+    width: 95%;
+  }
+
+  .footer-container {
+    bottom: 0;
+    padding: 0 2rem;
+  }
+
+  .footer {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .footer-left {
+    margin-bottom: -4rem;
+    width: 100%;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    margin-bottom: .8rem;
+  }
+
+  .social-icons {
+    width: 100%;
+  }
+
+  .font-icon {
+    margin-left: 5rem;
+    padding: 1rem;
+  }
+
+  .icons {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
